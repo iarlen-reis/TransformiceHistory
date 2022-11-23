@@ -11,7 +11,6 @@ html {
     font-size: 62.5%;
 }
 
-
 :root {
     --background-black: #202022;
     --background: #00747C;
@@ -35,8 +34,10 @@ html {
 }
 
 .main__content {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1380px;
     margin: 0 auto;
+
 }
 
 .home__section {
@@ -50,23 +51,32 @@ html {
     justify-content: space-between;
     align-items: center;
 
-    padding-right: 3rem;
+    /* padding-right: 3rem; */
+
+    overflow-y: hidden;
 }
 
-.home__section aside .logo__menu {
-    width: 15rem;
-    height: 100%;
-}
+
 
 .home__section aside {
     display: flex;
     width: 100%;
     height: 8.7rem;
+
+
     background: var(--background-black);
+}
+
+.logo__menu {
+    width: 100%;
+    height: 100%;
 }
 
 .navegation ul {
     display: flex;
+    width: 100%;
+    justify-content: end;
+
     column-gap: 0.5rem;
 }
 
@@ -87,12 +97,15 @@ html {
     height: 100%;
 }
 
-.navegation ul li a:hover {
-    color: var(--text-color-gray);
+.navegation ul li a img:hover {
+    width: 35px;
+    height: 35px;
     transition: all .31s linear;
-    font-size: 14px;
 }
 
+.about__menu,
+.rank__menu,
+.favoritos__menu,
 .github__menu {
     width: 40px;
     height: 40px;
@@ -196,8 +209,15 @@ footer a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         background: var(--background-black);
+    }
+
+    .extender__menu ul li a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .menu__mobile img {
