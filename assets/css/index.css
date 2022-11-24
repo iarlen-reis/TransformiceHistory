@@ -122,10 +122,12 @@ html {
     cursor: pointer;
 }
 
-
+.main__container {
+    height: 100%;
+}
 
 footer {
-    display: block;
+    display: flex;
     height: 4rem;
     width: 100%;
     align-items: center;
