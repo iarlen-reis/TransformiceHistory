@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: var(--background);
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -18,6 +22,12 @@ html {
     --text-color-white: #FFFFFF;
     --text-color-gray: #878787;
     --text-color-gray-light: #CACACA;
+
+    --profile-background: #324650;
+    --text-profile-color: #6c77c1;
+    --title-profile-color: #0F8386;
+    --tribe--profile-color: #A0A636;
+    --name-profile-color: #4C799A;
 }
 
 .section {
@@ -98,9 +108,9 @@ html {
 }
 
 .navegation ul li a img:hover {
-    width: 35px;
-    height: 35px;
-    transition: all .31s linear;
+    width: 30px;
+    height: 30px;
+    transition: all .41s linear;
 }
 
 .about__menu,
@@ -113,8 +123,9 @@ html {
 }
 
 
+
 footer {
-    display: flex;
+    display: block;
     height: 4rem;
     width: 100%;
     align-items: center;
